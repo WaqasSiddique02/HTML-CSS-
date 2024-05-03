@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Google</title>
+
+    <style>
+        input {
+            height: 40px;
+            width: 37%;
+            border: rgb(112, 111, 111);
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 25px;
+            padding-left: 40px;
+        }
+
+        .btns {
+            padding-top: 20px;
+            height: 30px;
+        }
+
+        #btn {
+            height: 30px;
+            width: auto;
+            border-radius: 4px;
+            background-color: rgb(209, 199, 199);
+            border: 1px;
+            cursor: pointer;
+        }
+
+        .nav-in{
+            float: right;
+        }
+
+        #signinbtn{
+            height: 30px;
+            width: 70px;
+            background-color: blue;
+            color: white;
+            font-size: 15px;
+        }
+
+        .nav{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+        }
+
+        #googleimg{
+            margin-left: 12%;
+        }
+
+        .search-icon{
+            position: absolute;
+            left: 29%;
+            top: 62.5%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav-in">
+        <a href="#" class="nav">Gmail</a>
+        <a href="#" class="nav">Images</a>
+        <button id="signinbtn">Sign in</button>
+    </div>
+
+    <center><img src="googleimg.webp" height="30%" width="50%" id="googleimg"></center>
+    <center> <input type="text" id="inputbar"></center>
+    <img src="search.png" height="80px" width="80px" class="search-icon">
+    <div class="btns">
+        <center>
+            <button id="btn">Google Search</button>
+            <button id="btn">I'm Feeling lucky</button>
+        </center>
+    </div>
+    <br>
+    <center>
+        <p>Google offered in Urdu English</p>
+    </center>
+
+    <script>
+        let x = document.getElementById('v1');
+        let y = document.getElementById('v2');
+
+        document.getElementById('sumdis').addEventListener("click", sum);
+
+        function sum() {
+            let result = parseFloat(x.value) + parseFloat(y.value);
+            document.getElementById('result').innerText = "Sum: " + result;
+        }
+    </script>
+</body>
+</html>
